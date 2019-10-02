@@ -19,4 +19,7 @@ public class Pedido implements Serializable {
     @Id @GeneratedValue
     private Long id;
     private double total;
+    
+    @ManyToOne
+    private Consumidor consumidor;
 }

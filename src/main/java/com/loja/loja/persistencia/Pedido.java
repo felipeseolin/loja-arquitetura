@@ -8,6 +8,8 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Data
 @NoArgsConstructor

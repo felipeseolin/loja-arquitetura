@@ -1,5 +1,7 @@
 package com.loja.loja.persistencia;
 
-public interface CidadeDAO extends JPARepository<Cidade, Long>{
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CidadeDAO extends JpaRepository <Cidade, Long>{
     
 }

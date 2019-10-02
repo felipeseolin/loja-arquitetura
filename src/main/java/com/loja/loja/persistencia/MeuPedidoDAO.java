@@ -1,3 +1,7 @@
 package com.loja.loja.persistencia;
 
-public interface MeuPedidoDAO extends JPARepository<MeuPedido, Long> { }
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface MeuPedidoDAO extends JpaRepository<MeuPedido, Long> { }

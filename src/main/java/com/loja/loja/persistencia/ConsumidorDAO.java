@@ -1,7 +1,8 @@
 
 package com.loja.loja.persistencia;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ConsumidorDAO extends JPARepository <Consumidor, Long> {
+public interface ConsumidorDAO extends JpaRepository <Consumidor, Long> {
     
 }

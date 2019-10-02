@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Data
 @NoArgsConstructor

@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import javax.persistence.ManyToOne;
 
 @Data
 @NoArgsConstructor
@@ -18,4 +19,7 @@ public class Cidade implements Serializable {
     @Id @GenaretedValue
     private Long id;
     private String nome;
+    
+    @ManyToOne
+    private Estado estado;
 }

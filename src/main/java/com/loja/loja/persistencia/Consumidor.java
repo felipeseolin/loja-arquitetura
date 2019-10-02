@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
+import javax.persistence.ManyToOne;
 
 @Data
 @NoArgsConstructor
@@ -18,4 +19,7 @@ public class Consumidor implements Serializable{
     private Long id;
     private String nome;
     private String telefone;
+
+    @ManyToOne
+    private Cidade cidade;
 }

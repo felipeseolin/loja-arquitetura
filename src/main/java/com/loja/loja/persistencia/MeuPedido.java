@@ -22,4 +22,6 @@ public class MeuPedido implements Serializable {
 
     @ManyToOne
     private Produto produto;
+    @ManyToOne
+    private Pedido pedido;
 }
